@@ -4,10 +4,7 @@ import math
 # to call, load file in ipython: import l3_tasks.py, then call function with argument
 def exchange_first_last(seq):
     seq_length = len(seq)
-    if seq_length > 0:
-        a_new_sequence = seq[-1:] + seq[1:-1] + seq[:1]
-    else:
-        a_new_sequence = seq
+    a_new_sequence = seq[-1:] + seq[1:-1] + seq[:1]
     return a_new_sequence
 
 def every_other_removed(seq):

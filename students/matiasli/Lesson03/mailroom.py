@@ -38,6 +38,9 @@ while response != '3':
 
     if response == '2':
         # Include Donor Name, total donated, number of donations and average donation amount as values in each row
-        print(len(a_namespace))
+        #print(len(a_namespace))
+        print('Donor Name                | Total Given | Num Gifts | Average Gift')
+        print('------------------------------------------------------------------')
         for name2 in a_namespace:
-            print('Donor Name {:<10}  |  Total Donated {:<6} |  Num Donations  {:<6}  | Average Donation {:<6} '.format(name2[0], sum(name2[1]), len(name2[1]), sum(name2[1])//len(name2[1]) ) )
+            #print('Donor Name {:<10}  |  Total Donated {:<6} |  Num Donations  {:<6}  | Average Donation {:<6} '.format(name2[0], sum(name2[1]), len(name2[1]), sum(name2[1])//len(name2[1]) ) )
+            print('{:<24}  |  {:<10} |  {:<7}  | {:<6} '.format(name2[0], sum(name2[1]), len(name2[1]), sum(name2[1])//len(name2[1]) ) )
